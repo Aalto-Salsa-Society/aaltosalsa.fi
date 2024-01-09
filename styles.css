@@ -1,0 +1,44 @@
+/* @import url(); To import fonts */
+
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("images/ass-cover.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.ass-name {
+  text-align: center;
+  margin: 0;
+  color: rgb(230, 230, 230);
+  font-size: 6em;
+  padding-bottom: 0.25em;
+}
+
+.content-section {
+  margin: 1em;
+  text-align: justify;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-size: 2em;
+}
