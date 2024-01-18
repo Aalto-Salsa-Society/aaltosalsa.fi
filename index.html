@@ -1,51 +1,108 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>Aalto Salsa Society</title>
-    <meta name="description" content="The Aalto Salsa Society in Otaniemi" />
-    <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header class="main-header">
-      <h2 class="ass-name">Aalto Salsa Society</h2>
-    </header>
-    <ul class="navbar">
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a>About Us</a></li>
-    </ul>
-    <section class="content-section container">
-      <h2 class="section-header">About us</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Aalto Salsa Society</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">
+                ABOUT US
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="cover-image"></header>
+    <div class="container text-center mt-5">
+      <h2>ABOUT US</h2>
       <p>
         The Aalto Salsa Society is a welcoming community of Latin dance
-        enthusiasts! We teach Salsa and Bachata classes and organise various
-        events throughout the year.
+        enthusiasts!
       </p>
       <p>
-        We want to invite you, whether you’ve been dancing since your childhood
-        or have never even heard of Salsa or Bachata. We will adapt to your
-        abilities, offering weekly classes of various experience levels. You
-        will not only be dancing to keep yourself active, you’ll also be dancing
-        through the dark and cold times of the year without even noticing!
+        We teach Salsa and Bachata classes and organise various events
+        throughout the year.
       </p>
       <p>
-        You can find information on classes and events on our website and
-        telegram channel, or you can even come to one of our socials to ask us
-        in person.
+        We want to invite you, whether you already have experience in dancing or
+        have never danced before.
       </p>
-      <p>Welcome!</p>
-    </section>
-    <ul class="footer">
-      <li>
-        <a href="https://t.me/+UolnvHDFzkBlMTU8" target="_blank">Telegram</a>
-      </li>
-      <li>
-        <a
-          href="https://www.instagram.com/aaltosalsa?igsh=c24ycmxjcmdnNjlk"
-          target="_blank"
-          >Instagram</a
-        >
-      </li>
-    </ul>
+      <p>
+        We will adapt to your abilities, offering weekly classes of various
+        experience levels.
+      </p>
+      <p class="mt-4">Welcome!</p>
+    </div>
+    <div class="container mt-5">
+      <footer class="border-top">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark fs-2"
+              href="https://t.me/+UolnvHDFzkBlMTU8"
+              target="_blank"
+            >
+              <i class="bi bi-telegram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark fs-2"
+              href="https://www.instagram.com/aaltosalsa?igsh=c24ycmxjcmdnNjlk"
+              target="_blank"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark fs-2"
+              href="https://linkedin.com/company/aalto-salsa-society"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
