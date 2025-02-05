@@ -6,3 +6,7 @@
   background-blend-mode: multiply;
   height: 380px;
 }
+
+.container {
+  max-width: 960px !important;
+}
