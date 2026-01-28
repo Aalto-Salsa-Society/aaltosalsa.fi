@@ -1,4 +1,4 @@
-.cover-image {
+/* .cover-image {
   background-color: rgba(0, 0, 0, 0.4);
   background-image: url(images/ass-cover.jpg);
   background-size: cover;
@@ -20,6 +20,74 @@
   display: block;
   margin: 0 auto 15px; /* Centers the image and adds space below it */
 }
+
+.container div {
+  text-align: center;
+} */
+
+/* ================================
+   Banner
+   ================================ */
+
+.cover-image {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(images/ass-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 380px;
+}
+
+/* ================================
+   Layout container
+   ================================ */
+
+.container {
+  max-width: 960px !important;
+}
+
+/* ================================
+   Board member images (BEST VERSION)
+   ================================ */
+
+img.card-img-top {
+  width: 150px;
+  height: 150px;
+
+  /* Circle + cropping */
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+
+  /* Centering */
+  display: block;
+  margin: 0 auto 15px;
+
+  /* Grayscale by default */
+  filter: grayscale(100%);
+
+  /* Smooth hover effects */
+  transition:
+    filter 0.4s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Hover anywhere on the image container */
+.p-3:hover img.card-img-top {
+  filter: grayscale(0%);
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Prevent zoom from being clipped */
+.p-3 {
+  overflow: visible;
+}
+
+/* ================================
+   Text alignment
+   ================================ */
 
 .container div {
   text-align: center;
