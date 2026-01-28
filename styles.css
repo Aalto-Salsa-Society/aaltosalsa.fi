@@ -1,4 +1,4 @@
-.cover-image {
+/* .cover-image {
   background-color: rgba(0, 0, 0, 0.4);
   background-image: url(images/ass-cover.jpg);
   background-size: cover;
@@ -9,15 +9,36 @@
 
 .container {
   max-width: 960px !important;
+} */
+
+/* ================================
+   Cover image
+   ================================ */
+
+.cover-image {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url(images/ass-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  height: 380px;
 }
 
 /* ================================
-   Board member image styling
+   Layout container
    ================================ */
 
-.card-img-top {
-  width: 180px;
-  height: 180px;
+.container {
+  max-width: 960px !important;
+}
+
+/* ================================
+   Board member images
+   ================================ */
+
+img.card-img-top {
+  width: 180px !important;
+  height: 180px !important;
 
   /* perfect circle */
   border-radius: 50%;
@@ -41,16 +62,27 @@
 }
 
 /* Hover: zoom + color */
-.card-img-top:hover {
+img.card-img-top:hover {
   filter: grayscale(0%);
   transform: scale(1.08);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Mobile tweaks */
+/* ================================
+   Hover overflow fix
+   ================================ */
+
+.p-3 {
+  overflow: visible;
+}
+
+/* ================================
+   Mobile tweaks
+   ================================ */
+
 @media (max-width: 576px) {
-  .card-img-top {
-    width: 150px;
-    height: 150px;
+  img.card-img-top {
+    width: 150px !important;
+    height: 150px !important;
   }
 }
